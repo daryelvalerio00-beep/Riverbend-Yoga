@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | Riverbend Yoga Studio</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" aria-label="Riverbend Yoga Studio home">
+      <img class="logo" src="images/yoga-logo.png" alt="Riverbend Yoga Studio logo">
+    </a>
+  </header>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html">Events</a></li>
+    </ul>
+  </nav>
+  <main>
+
+    <section>
+      <h1>Workshops and Studio Events</h1>
+      <p>Riverbend offers workshops to help students learn, practice, and connect with others. Workshop dates and availability may change, so contact us for the latest information.</p>
+      <figure>
+        <img src="images/yoga-workshop.jpg" alt="Yoga workshop participants practicing together" onerror="this.style.display='none'">
+        <figcaption>Workshop spotlight: a chance to learn new techniques and practice in a supportive group.</figcaption>
+      </figure>
+      <p class="small-note">Add the official <code>yoga-workshop.jpg</code> image from the Riverbend media ZIP to the images folder for this figure.</p>
+    </section>
+    <section class="two-column">
+      <div>
+        <h2>Featured Studio Space</h2>
+        <picture>
+          <source media="(max-width: 699px)" srcset="images/yoga-feature-small.jpg">
+          <source media="(min-width: 700px)" srcset="images/yoga-feature-large.jpg">
+          <img src="images/yoga-studio.jpg" alt="Peaceful yoga studio prepared for a class">
+        </picture>
+        <p class="small-note">The responsive picture uses the small and large featured images supplied in the official media ZIP. Add those files to the images folder.</p>
+      </div>
+      <div>
+        <h2>Studio Introduction</h2>
+        <video controls width="100%">
+          <source src="media/yoga-intro.mp4" type="video/mp4">
+          Your browser does not support the video element. Please contact Riverbend Yoga Studio for information about the studio and its classes.
+        </video>
+        <p class="small-note">Add <code>yoga-intro.mp4</code> from the official media ZIP inside the media folder. The fallback text remains available if the video cannot play.</p>
+      </div>
+    </section>
+    <section>
+      <h2>Request a Spot</h2>
+      <p>Use this form to share your interest in an upcoming workshop. The form is a front-end example and does not send information until connected to a form service.</p>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Workshop Interest Form</legend>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+          <label for="interest">Class or event interest</label>
+          <select id="interest" name="interest" required>
+            <option value="">Choose an option</option>
+            <option>Gentle yoga</option>
+            <option>Vinyasa yoga</option>
+            <option>Restorative yoga</option>
+            <option>Workshop</option>
+            <option>Private session</option>
+          </select>
+          <label for="level">Experience level</label>
+          <select id="level" name="level">
+            <option value="">Choose an option</option>
+            <option>Beginner</option>
+            <option>Some experience</option>
+            <option>Experienced</option>
+          </select>
+          <label for="contact">Preferred contact method</label>
+          <select id="contact" name="contact">
+            <option>Email</option>
+            <option>Phone</option>
+          </select>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us which class or event interests you."></textarea>
+          <button type="submit">Send Interest Request</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Riverbend Yoga Studio</p>
+    <p>Move at your own pace. Everyone is welcome.</p>
+  </footer>
+</body>
+</html>
